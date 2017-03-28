@@ -14,6 +14,9 @@
 		17B60EE21E8B0A92003B4A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EE01E8B0A92003B4A2F /* LaunchScreen.storyboard */; };
 		17B60EED1E8B0A92003B4A2F /* AdMob_dhbwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B60EEC1E8B0A92003B4A2F /* AdMob_dhbwTests.swift */; };
 		17B60EF81E8B0A92003B4A2F /* AdMob_dhbwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B60EF71E8B0A92003B4A2F /* AdMob_dhbwUITests.swift */; };
+		40101AAF0A8E006DFC81AC5A /* Pods_AdMob_dhbw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EC7F3A079AF45BF2A45740 /* Pods_AdMob_dhbw.framework */; };
+		5D954B9485C3B5663A3B817D /* Pods_AdMob_dhbwTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60518CD960996EFAEAEB8AE1 /* Pods_AdMob_dhbwTests.framework */; };
+		B5C8B696C633D27B087D438A /* Pods_AdMob_dhbwUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbwUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B60ED41E8B0A92003B4A2F /* AdMob_dhbw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMob_dhbw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B60ED91E8B0A92003B4A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		17B60EF31E8B0A92003B4A2F /* AdMob_dhbwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdMob_dhbwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B60EF71E8B0A92003B4A2F /* AdMob_dhbwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMob_dhbwUITests.swift; sourceTree = "<group>"; };
 		17B60EF91E8B0A92003B4A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DED5188576BDA429F71EEF /* Pods-AdMob_dhbwUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob_dhbwUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdMob_dhbwUITests/Pods-AdMob_dhbwUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60518CD960996EFAEAEB8AE1 /* Pods_AdMob_dhbwTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbwTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7952FB199D7D046F7DE5AD7A /* Pods-AdMob_dhbwTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob_dhbwTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdMob_dhbwTests/Pods-AdMob_dhbwTests.release.xcconfig"; sourceTree = "<group>"; };
+		814CA75D1C5B988DB52B649E /* Pods-AdMob_dhbwTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob_dhbwTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdMob_dhbwTests/Pods-AdMob_dhbwTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85CC5B999D8DCCF39C98F588 /* Pods-AdMob_dhbw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob_dhbw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdMob_dhbw/Pods-AdMob_dhbw.debug.xcconfig"; sourceTree = "<group>"; };
+		B5655D859173168081095780 /* Pods-AdMob_dhbw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob_dhbw.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdMob_dhbw/Pods-AdMob_dhbw.release.xcconfig"; sourceTree = "<group>"; };
+		D48E5C11B3694546D7BE2AF9 /* Pods-AdMob_dhbwUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob_dhbwUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdMob_dhbwUITests/Pods-AdMob_dhbwUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2EC7F3A079AF45BF2A45740 /* Pods_AdMob_dhbw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40101AAF0A8E006DFC81AC5A /* Pods_AdMob_dhbw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D954B9485C3B5663A3B817D /* Pods_AdMob_dhbwTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C8B696C633D27B087D438A /* Pods_AdMob_dhbwUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				17B60EEB1E8B0A92003B4A2F /* AdMob_dhbwTests */,
 				17B60EF61E8B0A92003B4A2F /* AdMob_dhbwUITests */,
 				17B60ED51E8B0A92003B4A2F /* Products */,
+				94582C84C1EEE23E1DFBA58F /* Pods */,
+				8F7F3716279D5F951FB90AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = AdMob_dhbwUITests;
 			sourceTree = "<group>";
 		};
+		8F7F3716279D5F951FB90AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2EC7F3A079AF45BF2A45740 /* Pods_AdMob_dhbw.framework */,
+				60518CD960996EFAEAEB8AE1 /* Pods_AdMob_dhbwTests.framework */,
+				10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94582C84C1EEE23E1DFBA58F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85CC5B999D8DCCF39C98F588 /* Pods-AdMob_dhbw.debug.xcconfig */,
+				B5655D859173168081095780 /* Pods-AdMob_dhbw.release.xcconfig */,
+				814CA75D1C5B988DB52B649E /* Pods-AdMob_dhbwTests.debug.xcconfig */,
+				7952FB199D7D046F7DE5AD7A /* Pods-AdMob_dhbwTests.release.xcconfig */,
+				49DED5188576BDA429F71EEF /* Pods-AdMob_dhbwUITests.debug.xcconfig */,
+				D48E5C11B3694546D7BE2AF9 /* Pods-AdMob_dhbwUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B60EFC1E8B0A92003B4A2F /* Build configuration list for PBXNativeTarget "AdMob_dhbw" */;
 			buildPhases = (
+				6DFACDFAA2D2FF53CEBD7A49 /* [CP] Check Pods Manifest.lock */,
 				17B60ED01E8B0A92003B4A2F /* Sources */,
 				17B60ED11E8B0A92003B4A2F /* Frameworks */,
 				17B60ED21E8B0A92003B4A2F /* Resources */,
+				90F428B1F8178ED5BCE51573 /* [CP] Embed Pods Frameworks */,
+				FD421EC24FAC14EDD34638E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B60EFF1E8B0A92003B4A2F /* Build configuration list for PBXNativeTarget "AdMob_dhbwTests" */;
 			buildPhases = (
+				81DB77D73F51EBFB9FDE3669 /* [CP] Check Pods Manifest.lock */,
 				17B60EE41E8B0A92003B4A2F /* Sources */,
 				17B60EE51E8B0A92003B4A2F /* Frameworks */,
 				17B60EE61E8B0A92003B4A2F /* Resources */,
+				6D492479341965EFD90CA077 /* [CP] Embed Pods Frameworks */,
+				7B999B60AD304798C755D8E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B60F021E8B0A92003B4A2F /* Build configuration list for PBXNativeTarget "AdMob_dhbwUITests" */;
 			buildPhases = (
+				A73B74DB6B26570F3E0D1C8B /* [CP] Check Pods Manifest.lock */,
 				17B60EEF1E8B0A92003B4A2F /* Sources */,
 				17B60EF01E8B0A92003B4A2F /* Frameworks */,
 				17B60EF11E8B0A92003B4A2F /* Resources */,
+				508192049583E9AA814C92E7 /* [CP] Embed Pods Frameworks */,
+				1D722BBE45C0410655216D83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D722BBE45C0410655216D83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdMob_dhbwUITests/Pods-AdMob_dhbwUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		508192049583E9AA814C92E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdMob_dhbwUITests/Pods-AdMob_dhbwUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D492479341965EFD90CA077 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdMob_dhbwTests/Pods-AdMob_dhbwTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DFACDFAA2D2FF53CEBD7A49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B999B60AD304798C755D8E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdMob_dhbwTests/Pods-AdMob_dhbwTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81DB77D73F51EBFB9FDE3669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90F428B1F8178ED5BCE51573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdMob_dhbw/Pods-AdMob_dhbw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A73B74DB6B26570F3E0D1C8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD421EC24FAC14EDD34638E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdMob_dhbw/Pods-AdMob_dhbw-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17B60ED01E8B0A92003B4A2F /* Sources */ = {
@@ -413,8 +600,10 @@
 		};
 		17B60EFD1E8B0A92003B4A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85CC5B999D8DCCF39C98F588 /* Pods-AdMob_dhbw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3DZ852B6GJ;
 				INFOPLIST_FILE = AdMob_dhbw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,8 +615,10 @@
 		};
 		17B60EFE1E8B0A92003B4A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5655D859173168081095780 /* Pods-AdMob_dhbw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3DZ852B6GJ;
 				INFOPLIST_FILE = AdMob_dhbw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +630,7 @@
 		};
 		17B60F001E8B0A92003B4A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CA75D1C5B988DB52B649E /* Pods-AdMob_dhbwTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +646,7 @@
 		};
 		17B60F011E8B0A92003B4A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7952FB199D7D046F7DE5AD7A /* Pods-AdMob_dhbwTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +662,7 @@
 		};
 		17B60F031E8B0A92003B4A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DED5188576BDA429F71EEF /* Pods-AdMob_dhbwUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3DZ852B6GJ;
@@ -483,6 +677,7 @@
 		};
 		17B60F041E8B0A92003B4A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48E5C11B3694546D7BE2AF9 /* Pods-AdMob_dhbwUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3DZ852B6GJ;
@@ -514,6 +709,7 @@
 				17B60EFE1E8B0A92003B4A2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B60EFF1E8B0A92003B4A2F /* Build configuration list for PBXNativeTarget "AdMob_dhbwTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +718,7 @@
 				17B60F011E8B0A92003B4A2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B60F021E8B0A92003B4A2F /* Build configuration list for PBXNativeTarget "AdMob_dhbwUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +727,7 @@
 				17B60F041E8B0A92003B4A2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
