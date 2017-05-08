@@ -48,6 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         GADMobileAds.configure(withApplicationID: "ca-app-pub-2752059782429024/8442660995")
     }
-
+    
 }
 
