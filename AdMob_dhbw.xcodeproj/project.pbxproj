@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1734E3A01EC070BE00359F14 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E39F1EC070BE00359F14 /* TableViewController.swift */; };
 		17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */; };
-		17B60EDA1E8B0A92003B4A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B60ED91E8B0A92003B4A2F /* ViewController.swift */; };
 		17B60EDD1E8B0A92003B4A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EDB1E8B0A92003B4A2F /* Main.storyboard */; };
 		17B60EDF1E8B0A92003B4A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */; };
 		17B60EE21E8B0A92003B4A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EE01E8B0A92003B4A2F /* LaunchScreen.storyboard */; };
@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbwUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1734E39F1EC070BE00359F14 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		17B60ED41E8B0A92003B4A2F /* AdMob_dhbw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMob_dhbw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17B60ED91E8B0A92003B4A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17B60EDC1E8B0A92003B4A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B60EE11E8B0A92003B4A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */,
-				17B60ED91E8B0A92003B4A2F /* ViewController.swift */,
+				1734E39F1EC070BE00359F14 /* TableViewController.swift */,
 				17B60EDB1E8B0A92003B4A2F /* Main.storyboard */,
 				17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */,
 				17B60EE01E8B0A92003B4A2F /* LaunchScreen.storyboard */,
@@ -242,7 +242,7 @@
 				TargetAttributes = {
 					17B60ED31E8B0A92003B4A2F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3DZ852B6GJ;
+						DevelopmentTeam = C23UW3NA42;
 						ProvisioningStyle = Automatic;
 					};
 					17B60EE71E8B0A92003B4A2F = {
@@ -449,8 +449,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B60EDA1E8B0A92003B4A2F /* ViewController.swift in Sources */,
 				17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */,
+				1734E3A01EC070BE00359F14 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3DZ852B6GJ;
+				DEVELOPMENT_TEAM = C23UW3NA42;
 				INFOPLIST_FILE = AdMob_dhbw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pe.AdMob-dhbw";
@@ -619,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3DZ852B6GJ;
+				DEVELOPMENT_TEAM = C23UW3NA42;
 				INFOPLIST_FILE = AdMob_dhbw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pe.AdMob-dhbw";
