@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMobileAds
 
-class InterstatialAD: UIViewController, GADInterstitialDelegate {
+class InterstitialAD: UIViewController, GADInterstitialDelegate {
     
     var interstitial: GADInterstitial?
     var adExited = false

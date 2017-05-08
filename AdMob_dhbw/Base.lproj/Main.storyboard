@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="34" y="253"/>
         </scene>
-        <!--InterstatialAD-->
+        <!--InterstitialAD-->
         <scene sceneID="qBK-F5-UGv">
             <objects>
-                <viewController storyboardIdentifier="AndereAD" id="Rus-jP-skr" customClass="InterstatialAD" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AndereAD" id="Rus-jP-skr" customClass="InterstitialAD" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kcx-d2-Lf6"/>
                         <viewControllerLayoutGuide type="bottom" id="ggI-On-Nmo"/>
