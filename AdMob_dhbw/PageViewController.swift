@@ -23,6 +23,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
                 
+        self.view.backgroundColor = UIColor.white
+        
         dataSource = self
         delegate = self
         
