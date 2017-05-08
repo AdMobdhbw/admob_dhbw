@@ -30,7 +30,6 @@ class BannerAD: UITableViewController, GADBannerViewDelegate
         print("Banner loaded successfully")
         tableView.tableHeaderView?.frame = bannerView.frame
         tableView.tableHeaderView = bannerView
-        
     }
     
     func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
