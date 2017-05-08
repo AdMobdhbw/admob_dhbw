@@ -12,6 +12,7 @@ import GoogleMobileAds
 class InterstatialAD: UIViewController, GADInterstitialDelegate {
     
     var interstitial: GADInterstitial?
+    var adExited = false
     
     private func createAndLoadInterstitial() -> GADInterstitial? {
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-2752059782429024/8899451793")
@@ -29,10 +30,15 @@ class InterstatialAD: UIViewController, GADInterstitialDelegate {
         return interstitial
     }
     
-    override func viewDidLoad(_ animated: Bool) {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         
-        interstitial = createAndLoadInterstitial()
+        if !adExited {
+            interstitial = createAndLoadInterstitial()
+            adExited = true
+        } else {
+            adExited = false
+        }
     }
     
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
