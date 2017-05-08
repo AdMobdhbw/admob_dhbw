@@ -7,20 +7,41 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GADInterstitialDelegate {
 
+    var interstitial: GADInterstitial?
+    
+    private func createAndLoadInterstitial() -> GADInterstitial? {
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-2752059782429024/8899451793")
+        
+        guard let interstitial = interstitial else {
+            return nil
+        }
+        
+        let request = GADRequest()
+        // next line is only needed if executed in the simulator
+        request.testDevices = [ kGADSimulatorID ]
+        interstitial.load(request)
+        interstitial.delegate = self
+        
+        return interstitial
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hallo")
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        interstitial = createAndLoadInterstitial()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        print("Interstitial loaded successfully")
+        ad.present(fromRootViewController: self)
     }
-
-
+    
+    func interstitialDidFail(toPresentScreen ad: GADInterstitial) {
+        print("Failed to receive interstitial")
+    }
 }
 
