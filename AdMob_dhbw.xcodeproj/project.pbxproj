@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1734E3A01EC070BE00359F14 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E39F1EC070BE00359F14 /* TableViewController.swift */; };
+		1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E39F1EC070BE00359F14 /* BannerAD.swift */; };
+		1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A31EC085F500359F14 /* PageViewController.swift */; };
+		1734E3A81EC0877E00359F14 /* AndereAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A71EC0877E00359F14 /* AndereAD.swift */; };
 		17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */; };
 		17B60EDD1E8B0A92003B4A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EDB1E8B0A92003B4A2F /* Main.storyboard */; };
 		17B60EDF1E8B0A92003B4A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */; };
@@ -38,7 +40,9 @@
 
 /* Begin PBXFileReference section */
 		10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbwUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1734E39F1EC070BE00359F14 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1734E39F1EC070BE00359F14 /* BannerAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAD.swift; sourceTree = "<group>"; };
+		1734E3A31EC085F500359F14 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		1734E3A71EC0877E00359F14 /* AndereAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndereAD.swift; sourceTree = "<group>"; };
 		17B60ED41E8B0A92003B4A2F /* AdMob_dhbw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMob_dhbw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B60EDC1E8B0A92003B4A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,8 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */,
-				1734E39F1EC070BE00359F14 /* TableViewController.swift */,
+				1734E39F1EC070BE00359F14 /* BannerAD.swift */,
 				17B60EDB1E8B0A92003B4A2F /* Main.storyboard */,
+				1734E3A31EC085F500359F14 /* PageViewController.swift */,
+				1734E3A71EC0877E00359F14 /* AndereAD.swift */,
 				17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */,
 				17B60EE01E8B0A92003B4A2F /* LaunchScreen.storyboard */,
 				17B60EE31E8B0A92003B4A2F /* Info.plist */,
@@ -449,8 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */,
+				1734E3A81EC0877E00359F14 /* AndereAD.swift in Sources */,
 				17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */,
-				1734E3A01EC070BE00359F14 /* TableViewController.swift in Sources */,
+				1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
