@@ -29,7 +29,7 @@ class InterstatialAD: UIViewController, GADInterstitialDelegate {
         return interstitial
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad(_ animated: Bool) {
         super.viewDidLoad()
         
         interstitial = createAndLoadInterstitial()

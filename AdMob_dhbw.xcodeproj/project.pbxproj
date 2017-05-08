@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014D88961EC0A56300060D2E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D88951EC0A56300060D2E /* test.swift */; };
 		1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E39F1EC070BE00359F14 /* BannerAD.swift */; };
 		1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A31EC085F500359F14 /* PageViewController.swift */; };
 		1734E3A81EC0877E00359F14 /* InterstitialAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A71EC0877E00359F14 /* InterstitialAD.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014D88951EC0A56300060D2E /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbwUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1734E39F1EC070BE00359F14 /* BannerAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAD.swift; sourceTree = "<group>"; };
 		1734E3A31EC085F500359F14 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */,
 				17B60EE01E8B0A92003B4A2F /* LaunchScreen.storyboard */,
 				17B60EE31E8B0A92003B4A2F /* Info.plist */,
+				014D88951EC0A56300060D2E /* test.swift */,
 			);
 			path = AdMob_dhbw;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */,
 				1734E3A81EC0877E00359F14 /* InterstitialAD.swift in Sources */,
 				17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */,
+				014D88961EC0A56300060D2E /* test.swift in Sources */,
 				1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
