@@ -8,28 +8,42 @@
 
 import UIKit
 
-class PageViewController: UIPageViewController, UIPageViewControllerDataSource
+class PageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate
 {
-    private(set) lazy var orderedViewControllers: [UIViewController] = {
+   lazy var orderedViewControllers: [UIViewController] = {
         return [self.newViewController(ofType: "Banner"),
                 self.newViewController(ofType: "Andere")]
     }()
     
+    func newViewController(ofType type: String) -> UIViewController
+    {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(type)AD")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.white
-        
+                
         dataSource = self
+        delegate = self
         
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
+                
     }
     
-    func newViewController(ofType type: String) -> UIViewController
-    {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(type)AD")
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        for view in self.view.subviews {
+            if view is UIScrollView {
+                view.frame = UIScreen.main.bounds
+            } else if view is UIPageControl {
+                view.backgroundColor = UIColor.clear
+                let pageView = view as! UIPageControl
+                pageView.pageIndicatorTintColor = UIColor.gray.withAlphaComponent(0.5)
+                pageView.currentPageIndicatorTintColor = UIColor.black
+            }
+        }
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -58,6 +72,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource
         }
         
         let nextIndex = viewControllerIndex + 1
+        
         let orderedViewControllersCount = orderedViewControllers.count
         
         guard orderedViewControllersCount != nextIndex else {
