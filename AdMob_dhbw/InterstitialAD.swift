@@ -27,7 +27,6 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
         interstitial.load(request)
         interstitial.delegate = self
         
-        
         return interstitial
     }
     
