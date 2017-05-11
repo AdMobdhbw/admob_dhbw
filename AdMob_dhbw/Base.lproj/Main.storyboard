@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1153" y="-413"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sticky BannerAD-->
         <scene sceneID="nN0-oG-tiP">
             <objects>
-                <tableViewController storyboardIdentifier="StickyBannerAD" id="ZmG-fh-qRo" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="StickyBannerAD" id="ZmG-fh-qRo" customClass="StickyBannerAD" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rVu-kd-0ku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
