@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="282" y="-413"/>
         </scene>
-        <!--View Controller-->
+        <!--Banner AnimationAD-->
         <scene sceneID="Yu6-bT-OgO">
             <objects>
-                <viewController storyboardIdentifier="AnimationAD" id="Kyo-x3-qnt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimationAD" id="Kyo-x3-qnt" customClass="BannerAnimationAD" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V75-Sd-Dre"/>
                         <viewControllerLayoutGuide type="bottom" id="QYC-nq-a8A"/>
@@ -57,15 +57,6 @@
                     <view key="view" contentMode="scaleToFill" id="da0-r1-pED">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="De9-n3-LXg">
-                                <rect key="frame" x="133" y="365" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
