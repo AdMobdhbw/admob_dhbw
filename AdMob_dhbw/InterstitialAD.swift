@@ -8,6 +8,6 @@
 
 import UIKit
 
-class AndereAD: UIViewController {
+class InterstitialAD: UIViewController {
     
 }
