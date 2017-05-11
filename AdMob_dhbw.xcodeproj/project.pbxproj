@@ -11,6 +11,9 @@
 		1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E39F1EC070BE00359F14 /* BannerAD.swift */; };
 		1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A31EC085F500359F14 /* PageViewController.swift */; };
 		1734E3A81EC0877E00359F14 /* InterstitialAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A71EC0877E00359F14 /* InterstitialAD.swift */; };
+		17906DC81EC4C01B0087B660 /* BannerAnimationAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17906DC71EC4C01B0087B660 /* BannerAnimationAD.swift */; };
+		17906DCA1EC4C0860087B660 /* StickyBannerAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17906DC91EC4C0860087B660 /* StickyBannerAD.swift */; };
+		17AF8E691EC0B40D00FDD241 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17AF8E681EC0B40D00FDD241 /* GoogleService-Info.plist */; };
 		17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */; };
 		17B60EDD1E8B0A92003B4A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EDB1E8B0A92003B4A2F /* Main.storyboard */; };
 		17B60EDF1E8B0A92003B4A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		1734E39F1EC070BE00359F14 /* BannerAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAD.swift; sourceTree = "<group>"; };
 		1734E3A31EC085F500359F14 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		1734E3A71EC0877E00359F14 /* InterstitialAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialAD.swift; sourceTree = "<group>"; };
+		17906DC71EC4C01B0087B660 /* BannerAnimationAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAnimationAD.swift; sourceTree = "<group>"; };
+		17906DC91EC4C0860087B660 /* StickyBannerAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyBannerAD.swift; sourceTree = "<group>"; };
+		17AF8E681EC0B40D00FDD241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17B60ED41E8B0A92003B4A2F /* AdMob_dhbw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMob_dhbw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B60ED71E8B0A92003B4A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B60EDC1E8B0A92003B4A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,11 +130,13 @@
 				1734E39F1EC070BE00359F14 /* BannerAD.swift */,
 				17B60EDB1E8B0A92003B4A2F /* Main.storyboard */,
 				1734E3A31EC085F500359F14 /* PageViewController.swift */,
+				17906DC71EC4C01B0087B660 /* BannerAnimationAD.swift */,
+				17906DC91EC4C0860087B660 /* StickyBannerAD.swift */,
 				1734E3A71EC0877E00359F14 /* InterstitialAD.swift */,
 				17B60EDE1E8B0A92003B4A2F /* Assets.xcassets */,
 				17B60EE01E8B0A92003B4A2F /* LaunchScreen.storyboard */,
 				17B60EE31E8B0A92003B4A2F /* Info.plist */,
-				014D88951EC0A56300060D2E /* test.swift */,
+				17AF8E681EC0B40D00FDD241 /* GoogleService-Info.plist */,
 			);
 			path = AdMob_dhbw;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17B60EE21E8B0A92003B4A2F /* LaunchScreen.storyboard in Resources */,
+				17AF8E691EC0B40D00FDD241 /* GoogleService-Info.plist in Resources */,
 				17B60EDF1E8B0A92003B4A2F /* Assets.xcassets in Resources */,
 				17B60EDD1E8B0A92003B4A2F /* Main.storyboard in Resources */,
 			);
@@ -459,9 +468,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */,
+				17906DCA1EC4C0860087B660 /* StickyBannerAD.swift in Sources */,
 				1734E3A81EC0877E00359F14 /* InterstitialAD.swift in Sources */,
+				17906DC81EC4C01B0087B660 /* BannerAnimationAD.swift in Sources */,
 				17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */,
-				014D88961EC0A56300060D2E /* test.swift in Sources */,
 				1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
