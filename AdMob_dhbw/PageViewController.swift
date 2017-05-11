@@ -12,6 +12,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
 {
    lazy var orderedViewControllers: [UIViewController] = {
         return [self.newViewController(ofType: "Banner"),
+                self.newViewController(ofType: "Animation"),
+                self.newViewController(ofType: "StickyBanner"),
                 self.newViewController(ofType: "Andere")]
     }()
     
@@ -23,6 +25,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
                 
+        self.view.backgroundColor = UIColor.white
+        
         dataSource = self
         delegate = self
         
