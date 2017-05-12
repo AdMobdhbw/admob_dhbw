@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010290B51EC5E36000C0CF79 /* FirebaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010290B41EC5E36000C0CF79 /* FirebaseTableController.swift */; };
+		010290B71EC5E4F300C0CF79 /* FirebaseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010290B61EC5E4F300C0CF79 /* FirebaseItems.swift */; };
 		01E25A831EC5DFBF005F422B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E25A821EC5DFBF005F422B /* WebView.swift */; };
 		1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E39F1EC070BE00359F14 /* BannerAD.swift */; };
 		1734E3A41EC085F500359F14 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734E3A31EC085F500359F14 /* PageViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010290B41EC5E36000C0CF79 /* FirebaseTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTableController.swift; sourceTree = "<group>"; };
+		010290B61EC5E4F300C0CF79 /* FirebaseItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseItems.swift; sourceTree = "<group>"; };
 		01E25A821EC5DFBF005F422B /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		10B453BC12B8F04D31D43641 /* Pods_AdMob_dhbwUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_dhbwUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1734E39F1EC070BE00359F14 /* BannerAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAD.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				17B60EE31E8B0A92003B4A2F /* Info.plist */,
 				17AF8E681EC0B40D00FDD241 /* GoogleService-Info.plist */,
 				01E25A821EC5DFBF005F422B /* WebView.swift */,
+				010290B41EC5E36000C0CF79 /* FirebaseTableController.swift */,
+				010290B61EC5E4F300C0CF79 /* FirebaseItems.swift */,
 			);
 			path = AdMob_dhbw;
 			sourceTree = "<group>";
@@ -473,6 +479,8 @@
 				1734E3A81EC0877E00359F14 /* InterstitialAD.swift in Sources */,
 				17906DC81EC4C01B0087B660 /* BannerAnimationAD.swift in Sources */,
 				17B60ED81E8B0A92003B4A2F /* AppDelegate.swift in Sources */,
+				010290B51EC5E36000C0CF79 /* FirebaseTableController.swift in Sources */,
+				010290B71EC5E4F300C0CF79 /* FirebaseItems.swift in Sources */,
 				1734E3A01EC070BE00359F14 /* BannerAD.swift in Sources */,
 				01E25A831EC5DFBF005F422B /* WebView.swift in Sources */,
 			);
