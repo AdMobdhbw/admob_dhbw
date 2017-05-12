@@ -14,7 +14,7 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
     var interstitial: GADInterstitial?
     var adExited = false
     
-    private func createAndLoadInterstitial() -> GADInterstitial? {
+    func createAndLoadInterstitial() -> GADInterstitial? {
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-2752059782429024/8899451793")
         
         guard let interstitial = interstitial else {
@@ -35,7 +35,6 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
         
         if !adExited {
             interstitial = createAndLoadInterstitial()
-            adExited = true
         } else {
             adExited = false
         }
@@ -48,5 +47,9 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
     
     func interstitialDidFail(toPresentScreen ad: GADInterstitial) {
         print("Failed to receive interstitial")
+    }
+    
+    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
+        adExited = true
     }
 }
