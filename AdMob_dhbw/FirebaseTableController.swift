@@ -19,9 +19,13 @@ class FirebaseTableController: BannerAD {
         return firebaseItems.allItems.count
     }
     
+    private struct Storyboard {
+        static let cellReuseIdentifier = "FirebaseCell"
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = firebaseTableView.dequeueReusableCell(withIdentifier: "FirebaseCell", for: indexPath) as UITableViewCell
+        let cell = firebaseTableView.dequeueReusableCell(withIdentifier: Storyboard.cellReuseIdentifier, for: indexPath) as UITableViewCell
         
         let item = firebaseItems.allItems[indexPath.row]
         cell.textLabel?.text = item
