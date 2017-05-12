@@ -14,7 +14,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return [self.newViewController(ofType: "Banner"),
                 self.newViewController(ofType: "Animation"),
                 self.newViewController(ofType: "StickyBanner"),
-                self.newViewController(ofType: "Andere")]
+                self.newViewController(ofType: "Interstitial")]
     }()
     
     func newViewController(ofType type: String) -> UIViewController
