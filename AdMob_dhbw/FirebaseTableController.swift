@@ -10,9 +10,30 @@ import UIKit
 
 class FirebaseTableController: BannerAD {
     
+    // MARK: - Variables
+    
     @IBOutlet weak var firebaseTableView: UITableView!
     
     var firebaseItems = FirebaseItems()
+    
+    var lastSelection: IndexPath!
+    
+    // MARK: - ViewController Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        firebaseTableView.rowHeight = UITableViewAutomaticDimension
+        firebaseTableView.estimatedRowHeight = 40
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        firebaseTableView.reloadData()
+    }
+    
+    // MARK: - UITableViewDataSource
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return firebaseItems.sections[section]
@@ -40,21 +61,14 @@ class FirebaseTableController: BannerAD {
         return cell
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (lastSelection != nil) {
+            firebaseTableView.cellForRow(at: lastSelection)?.accessoryType = .none
+        }
         
-        firebaseTableView.rowHeight = UITableViewAutomaticDimension
-        firebaseTableView.estimatedRowHeight = 40
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        firebaseTableView.reloadData()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        firebaseTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        lastSelection = indexPath
+        firebaseTableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
