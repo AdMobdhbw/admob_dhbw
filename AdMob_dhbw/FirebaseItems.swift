@@ -10,5 +10,5 @@ import UIKit
 
 class FirebaseItems {
     
-    var allItems = ["Get Started", "Analytics", "Cloud Messaging", "AdMob"]
+    var allItems: [[String]] = [["Get Started", "Analytics"], ["Cloud Messaging", "Cloud Functions", "Authentication", "Realtime Database", "Storage", "Hosting", "Test Lab", "Crash Reporting"], ["Remote Config", "App Indexing", "Dynamic Links", "Invites", "AdWords"], ["AdMob"]]
 }

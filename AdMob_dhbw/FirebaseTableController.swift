@@ -13,10 +13,13 @@ class FirebaseTableController: BannerAD {
     @IBOutlet weak var firebaseTableView: UITableView!
     
     var firebaseItems = FirebaseItems()
-    //var firebaseItems = ["Get Started", "Analytics", "Cloud Messaging", "AdMob"]
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return firebaseItems.allItems.count
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return firebaseItems.allItems.count
+        return firebaseItems.allItems[section].count
     }
     
     private struct Storyboard {
@@ -27,7 +30,7 @@ class FirebaseTableController: BannerAD {
         
         let cell = firebaseTableView.dequeueReusableCell(withIdentifier: Storyboard.cellReuseIdentifier, for: indexPath) as UITableViewCell
         
-        let item = firebaseItems.allItems[indexPath.row]
+        let item = firebaseItems.allItems[indexPath.section][indexPath.row]
         cell.textLabel?.text = item
         
         return cell
