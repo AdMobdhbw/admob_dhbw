@@ -58,6 +58,7 @@ class FirebaseTableController: BannerAD {
         // Configure cell...
         let item = firebaseItems.items[indexPath.section][indexPath.row]
         cell.textLabel?.text = item
+
         if (firebaseItems.cellState[indexPath.section][indexPath.row]) {
             cell.accessoryType = .checkmark
         } else {
