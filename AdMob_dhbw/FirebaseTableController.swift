@@ -14,12 +14,16 @@ class FirebaseTableController: BannerAD {
     
     var firebaseItems = FirebaseItems()
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return firebaseItems.sections[section]
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return firebaseItems.allItems.count
+        return firebaseItems.items.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return firebaseItems.allItems[section].count
+        return firebaseItems.items[section].count
     }
     
     private struct Storyboard {
@@ -30,7 +34,7 @@ class FirebaseTableController: BannerAD {
         
         let cell = firebaseTableView.dequeueReusableCell(withIdentifier: Storyboard.cellReuseIdentifier, for: indexPath) as UITableViewCell
         
-        let item = firebaseItems.allItems[indexPath.section][indexPath.row]
+        let item = firebaseItems.items[indexPath.section][indexPath.row]
         cell.textLabel?.text = item
         
         return cell
