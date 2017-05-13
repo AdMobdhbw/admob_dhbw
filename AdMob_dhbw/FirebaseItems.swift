@@ -13,4 +13,6 @@ class FirebaseItems {
     var sections = ["Start", "Develop", "Grow", "Earn"]
     
     var items: [[String]] = [["Get Started", "Analytics"], ["Cloud Messaging", "Cloud Functions", "Authentication", "Realtime Database", "Storage", "Hosting", "Test Lab", "Crash Reporting"], ["Remote Config", "App Indexing", "Dynamic Links", "Invites", "AdWords"], ["AdMob"]]
+    
+    var cellState: [[Bool]] = [[false, false], [false, false, false, false, false, false, false, false], [false, false, false, false, false], [false]]
 }

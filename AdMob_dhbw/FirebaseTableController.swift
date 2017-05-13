@@ -55,8 +55,14 @@ class FirebaseTableController: BannerAD {
         
         let cell = firebaseTableView.dequeueReusableCell(withIdentifier: Storyboard.cellReuseIdentifier, for: indexPath) as UITableViewCell
         
+        // Configure cell...
         let item = firebaseItems.items[indexPath.section][indexPath.row]
         cell.textLabel?.text = item
+        if (firebaseItems.cellState[indexPath.section][indexPath.row]) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
         
         return cell
     }
@@ -64,9 +70,11 @@ class FirebaseTableController: BannerAD {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (lastSelection != nil) {
             firebaseTableView.cellForRow(at: lastSelection)?.accessoryType = .none
+            firebaseItems.cellState[lastSelection.section][lastSelection.row] = false
         }
         
         firebaseTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        firebaseItems.cellState[indexPath.section][indexPath.row] = true
         lastSelection = indexPath
         firebaseTableView.deselectRow(at: indexPath, animated: true)
     }
