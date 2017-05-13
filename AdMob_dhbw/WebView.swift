@@ -25,9 +25,8 @@ class WebView: InterstitialAD, WKNavigationDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://www.apple.de")!
+        let url = URL(string: "https://firebase.google.com/docs/admob/ios/interstitial")!
         webView.load(URLRequest(url: url))
-        webView.allowsBackForwardNavigationGestures = true
         print("WebViewController loaded its view")
     }
 }
