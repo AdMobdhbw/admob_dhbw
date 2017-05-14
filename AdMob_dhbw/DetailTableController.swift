@@ -15,6 +15,7 @@ class DetailTableController: StickyBannerAD {
     // MARK: - Variables
     
     @IBOutlet weak var detailTableView: UITableView!
+    @IBOutlet weak var navigationBarItem: UINavigationItem!
     
     var detailItems = DetailItems()
     
@@ -33,6 +34,8 @@ class DetailTableController: StickyBannerAD {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        navigationBarItem.title = selectedItem
         
         if lastSelectedItem != selectedItem {
             let detailItemsCount = detailItems.getDetailItem(selectedItem)!.count

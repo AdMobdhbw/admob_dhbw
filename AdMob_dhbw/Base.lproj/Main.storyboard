@@ -18,16 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="LkT-le-VIj">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Banner Ad" id="sg6-Vh-GcT"/>
-                            </items>
-                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirebaseCell" textLabel="JAC-Ey-Pnu" style="IBUITableViewCellStyleDefault" id="eWv-Tv-T6H" customClass="FirebaseCell" customModule="AdMob_dhbw" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eWv-Tv-T6H" id="hfe-BD-NTq">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -112,7 +105,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Sticky Banner Ad" id="ojg-A5-71R"/>
+                                <navigationItem id="ojg-A5-71R"/>
                             </items>
                         </navigationBar>
                         <prototypes>
@@ -141,6 +134,7 @@
                     </tableView>
                     <connections>
                         <outlet property="detailTableView" destination="rVu-kd-0ku" id="nyG-yq-dFc"/>
+                        <outlet property="navigationBarItem" destination="ojg-A5-71R" id="EjG-Dx-g82"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMO-PT-gOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
