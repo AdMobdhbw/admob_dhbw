@@ -12,6 +12,8 @@ import WebKit
 class WebView: InterstitialAD, WKNavigationDelegate{
     
     var webView: WKWebView!
+    var urlString: String!
+    var urlItems = URLItems()
     
     override func loadView() { // called, if view = nil
         // create a web view
@@ -23,9 +25,10 @@ class WebView: InterstitialAD, WKNavigationDelegate{
         view = webView
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let url = URL(string: "https://firebase.google.com/docs/admob/ios/interstitial")!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        urlString = urlItems.getURL(selectedItem, selectedDetailItem)!
+        let url = URL(string: urlString)!
         webView.load(URLRequest(url: url))
         print("WebViewController loaded its view")
     }

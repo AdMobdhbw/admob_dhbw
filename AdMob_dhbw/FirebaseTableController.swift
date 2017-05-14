@@ -8,7 +8,7 @@
 
 import UIKit
 
-    var selectedItem: String!
+var selectedItem: String!
 
 class FirebaseTableController: BannerAD {
     
@@ -27,9 +27,6 @@ class FirebaseTableController: BannerAD {
         
         firebaseTableView.rowHeight = UITableViewAutomaticDimension
         firebaseTableView.estimatedRowHeight = 40
-        firebaseItems.itemDictionary = [
-            "Get Started": firebaseItems.getStarted, "Analytics": firebaseItems.analytics, "Cloud Messaging": firebaseItems.cloudMessaging, "Cloud Functions": firebaseItems.cloudFunctions, "Authentication": firebaseItems.authentication, "Realtime Database": firebaseItems.realtimeDatabase, "Storage": firebaseItems.storage, "Hosting": firebaseItems.hosting, "Test Lab": firebaseItems.testLab, "Crash Reporting": firebaseItems.crashReporting, "Remote Config": firebaseItems.remoteConfig, "App Indexing": firebaseItems.appIndexing, "Dynamic Links": firebaseItems.dynamicLinks, "Invites": firebaseItems.invites, "AdWords": firebaseItems.adWords, "AdMob": firebaseItems.adMob
-        ]
 
     }
     
