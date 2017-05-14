@@ -24,7 +24,7 @@ class DetailTableController: BannerAD {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let detailItemsCount = detailItems.getDetailItem(selectedItem)!.count
         for _ in 0...detailItemsCount {
             detailItems.detailCellState.append(false)
