@@ -111,7 +111,7 @@
         <!--Web View-->
         <scene sceneID="qBK-F5-UGv">
             <objects>
-                <viewController storyboardIdentifier="AndereAD" id="Rus-jP-skr" customClass="WebView" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InterstitialAD" id="Rus-jP-skr" customClass="WebView" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="QUK-Ng-Dd0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -53,4 +53,3 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
         adExited = true
     }
 }
-

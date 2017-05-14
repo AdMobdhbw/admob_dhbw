@@ -10,7 +10,7 @@ import UIKit
 
 var selectedDetailItem: Int!
 
-class DetailTableController: BannerAD {
+class DetailTableController: StickyBannerAD {
     
     // MARK: - Variables
     
@@ -26,7 +26,7 @@ class DetailTableController: BannerAD {
         super.viewDidLoad()
 
         let detailItemsCount = detailItems.getDetailItem(selectedItem)!.count
-        for _ in 0...detailItemsCount {
+        for _ in 0...detailItemsCount-1 {
             detailItems.detailCellState.append(false)
         }
         
