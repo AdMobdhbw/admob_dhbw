@@ -12,13 +12,12 @@ import GoogleMobileAds
 class BannerAnimationAD: UIViewController, GADBannerViewDelegate
 {
     var adAnimationBannerView: GADBannerView?
-        
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         adAnimationBannerView = GADBannerView(adSize: kGADAdSizeSkyscraper)
-        adAnimationBannerView?.center = CGPoint(x: self.view.center.x, y: self.view.center.y)
+        adAnimationBannerView?.center = CGPoint(x: self.view.center.x*1.5, y: self.view.center.y)
         adAnimationBannerView?.adUnitID = "ca-app-pub-2752059782429024/8442660995"
         adAnimationBannerView?.delegate = self
         adAnimationBannerView?.rootViewController = self

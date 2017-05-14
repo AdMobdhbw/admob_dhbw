@@ -11,10 +11,10 @@ import UIKit
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate
 {
    lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newViewController(ofType: "Banner"),
+        return [self.newViewController(ofType: "Animation"),
+                self.newViewController(ofType: "Banner"),
                 self.newViewController(ofType: "StickyBanner"),
-                self.newViewController(ofType: "Interstitial"),
-                self.newViewController(ofType: "Animation")]
+                self.newViewController(ofType: "Interstitial")]
     }()
     
     func newViewController(ofType type: String) -> UIViewController
