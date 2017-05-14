@@ -11,9 +11,13 @@ import WebKit
 
 class WebView: InterstitialAD, WKNavigationDelegate{
     
+    // MARK: - Variables
+    
     var webView: WKWebView!
     var urlString: String!
     var urlItems = URLItems()
+    
+    // MARK: - ViewController Lifecycle
     
     override func loadView() { // called, if view = nil
         // create a web view
