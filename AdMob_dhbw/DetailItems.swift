@@ -190,7 +190,7 @@ class DetailItems {
         case "AdMob":
             return adMob
         default:
-            return nil
+            return []
         }
     }
 }

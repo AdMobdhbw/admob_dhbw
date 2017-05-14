@@ -155,38 +155,38 @@ class URLItems {
         "https://firebase.google.com/docs/admob/ios/rewarded-video-adapters"
     ]
     
-    func getURL(_ selectedItemRow: String, _ selectedDetailItemRow: Int) -> String? {
+    func getURL(_ selectedItemRow: String, _ selectedDetailItemRow: Int?) -> String? {
         switch selectedItemRow {
         case "Get Started":
-            return getStartedURL[selectedDetailItemRow]
+            return getStartedURL[selectedDetailItemRow!]
         case "Analytics":
-            return analyticsURL[selectedDetailItemRow]
+            return analyticsURL[selectedDetailItemRow!]
         case "Cloud Messaging":
-            return cloudMessagingURL[selectedDetailItemRow]
+            return cloudMessagingURL[selectedDetailItemRow!]
         case "Cloud Functions":
-            return cloudFunctionsURL[selectedDetailItemRow]
+            return cloudFunctionsURL[selectedDetailItemRow!]
         case "Authetication":
-            return authenticationURL[selectedDetailItemRow]
+            return authenticationURL[selectedDetailItemRow!]
         case "Realtime Database":
-            return realtimeDatabaseURL[selectedDetailItemRow]
+            return realtimeDatabaseURL[selectedDetailItemRow!]
         case "Storage":
-            return storageURL[selectedDetailItemRow]
+            return storageURL[selectedDetailItemRow!]
         case "Hosting":
-            return hostingURL[selectedDetailItemRow]
+            return hostingURL[selectedDetailItemRow!]
         case "Crash Reporting":
-            return crashReportingURL[selectedDetailItemRow]
+            return crashReportingURL[selectedDetailItemRow!]
         case "Remote Config":
-            return remoteConfigURL[selectedDetailItemRow]
+            return remoteConfigURL[selectedDetailItemRow!]
         case "App Indexing":
-            return appIndexingURL[selectedDetailItemRow]
+            return appIndexingURL[selectedDetailItemRow!]
         case "Dynamic Links":
-            return dynamicLinksURL[selectedDetailItemRow]
+            return dynamicLinksURL[selectedDetailItemRow!]
         case "Invites":
-            return invitesURL[selectedDetailItemRow]
+            return invitesURL[selectedDetailItemRow!]
         case "AdWords":
-            return adWordsURL[selectedDetailItemRow]
+            return adWordsURL[selectedDetailItemRow!]
         case "AdMob":
-            return adMobURL[selectedDetailItemRow]
+            return adMobURL[selectedDetailItemRow!]
         default:
             return "https://www.google.com/"
         }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-var selectedItem: String!
+var selectedItem = ""
 
 class FirebaseTableController: BannerAD {
     
