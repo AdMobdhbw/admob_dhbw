@@ -10,7 +10,7 @@ import UIKit
 
 class DetailItems {
     
-    var detailCellState: [Bool] = [false]
+    var detailCellState: [Bool]!
     
     var getStarted = [
         "iOS"
@@ -167,7 +167,7 @@ class DetailItems {
             return cloudMessaging
         case "Cloud Functions":
             return cloudFunctions
-        case "Authetication":
+        case "Authentication":
             return authentication
         case "Realtime Database":
             return realtimeDatabase

@@ -20,16 +20,12 @@ class DetailTableController: StickyBannerAD {
     
     var lastSelection: IndexPath!
     
+    var lastSelectedItem = ""
+    
     // MARK: - ViewController Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let detailItemsCount = detailItems.getDetailItem(selectedItem)!.count
-        
-        for _ in 0...detailItemsCount-1 {
-            detailItems.detailCellState.append(false)
-        }
         
         detailTableView.rowHeight = UITableViewAutomaticDimension
         detailTableView.estimatedRowHeight = 40
@@ -37,6 +33,24 @@ class DetailTableController: StickyBannerAD {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if lastSelectedItem != selectedItem {
+            let detailItemsCount = detailItems.getDetailItem(selectedItem)!.count
+            
+            if detailItems.detailCellState != nil {
+                detailItems.detailCellState = nil
+                detailItems.detailCellState = [false]
+                for _ in 0...detailItemsCount-1 {
+                    detailItems.detailCellState.append(false)
+                }
+            } else {
+                detailItems.detailCellState = [false]
+                for _ in 0...detailItemsCount-1 {
+                    detailItems.detailCellState.append(false)
+                }
+            }
+        }
+        lastSelectedItem = selectedItem
         
         detailTableView.reloadData()
     }
