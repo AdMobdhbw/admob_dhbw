@@ -68,25 +68,25 @@
             </objects>
             <point key="canvasLocation" x="1153" y="-413"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Detail Table Controller-->
         <scene sceneID="nN0-oG-tiP">
             <objects>
-                <tableViewController storyboardIdentifier="StickyBannerAD" id="ZmG-fh-qRo" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="StickyBannerAD" id="ZmG-fh-qRo" customClass="DetailTableController" customModule="AdMob_dhbw" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rVu-kd-0ku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="38f-lf-Y0p">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" textLabel="PFG-B3-d0F" style="IBUITableViewCellStyleDefault" id="38f-lf-Y0p">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="38f-lf-Y0p" id="XRq-AB-x3l">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sticky Banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oZ-8g-QVj">
-                                            <rect key="frame" x="68" y="14" width="106" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PFG-B3-d0F">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -100,6 +100,9 @@
                             <outlet property="delegate" destination="ZmG-fh-qRo" id="QsF-jS-59X"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="detailTableView" destination="rVu-kd-0ku" id="nyG-yq-dFc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMO-PT-gOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

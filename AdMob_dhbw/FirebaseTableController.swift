@@ -8,6 +8,8 @@
 
 import UIKit
 
+    var selectedItem: String!
+
 class FirebaseTableController: BannerAD {
     
     // MARK: - Variables
@@ -25,6 +27,10 @@ class FirebaseTableController: BannerAD {
         
         firebaseTableView.rowHeight = UITableViewAutomaticDimension
         firebaseTableView.estimatedRowHeight = 40
+        firebaseItems.itemDictionary = [
+            "Get Started": firebaseItems.getStarted, "Analytics": firebaseItems.analytics, "Cloud Messaging": firebaseItems.cloudMessaging, "Cloud Functions": firebaseItems.cloudFunctions, "Authentication": firebaseItems.authentication, "Realtime Database": firebaseItems.realtimeDatabase, "Storage": firebaseItems.storage, "Hosting": firebaseItems.hosting, "Test Lab": firebaseItems.testLab, "Crash Reporting": firebaseItems.crashReporting, "Remote Config": firebaseItems.remoteConfig, "App Indexing": firebaseItems.appIndexing, "Dynamic Links": firebaseItems.dynamicLinks, "Invites": firebaseItems.invites, "AdWords": firebaseItems.adWords, "AdMob": firebaseItems.adMob
+        ]
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,13 +75,14 @@ class FirebaseTableController: BannerAD {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (lastSelection != nil) {
+        if lastSelection != nil {
             firebaseTableView.cellForRow(at: lastSelection)?.accessoryType = .none
             firebaseItems.cellState[lastSelection.section][lastSelection.row] = false
         }
         
         firebaseTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         firebaseItems.cellState[indexPath.section][indexPath.row] = true
+        selectedItem = firebaseTableView.cellForRow(at: indexPath)!.textLabel!.text!
         lastSelection = indexPath
         firebaseTableView.deselectRow(at: indexPath, animated: true)
     }
