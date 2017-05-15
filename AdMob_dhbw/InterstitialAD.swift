@@ -16,6 +16,8 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
     // variable to store the state of the Ad
     var adExited = false
     
+    // MARK: - Init
+    
     func createAndLoadInterstitial() -> GADInterstitial? {
         // assign adUnitID to interstitial variable
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-2752059782429024/8899451793")
@@ -36,6 +38,8 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
         return interstitial
     }
     
+    // MARK: - ViewController Lifecycle
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
@@ -46,6 +50,8 @@ class InterstitialAD: UIViewController, GADInterstitialDelegate {
             adExited = false
         }
     }
+    
+    // MARK: - AdMob actions
     
     // present ad if interstitial received the ad
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
