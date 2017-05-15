@@ -10,18 +10,25 @@ import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate
 {
-   lazy var orderedViewControllers: [UIViewController] = {
+    
+    // MARK: Init
+    
+    // array to reference view controllers
+    lazy var orderedViewControllers: [UIViewController] = {
         return [self.newViewController(ofType: "Animation"),
                 self.newViewController(ofType: "Banner"),
                 self.newViewController(ofType: "StickyBanner"),
                 self.newViewController(ofType: "Interstitial")]
     }()
     
+    // get view controller from storyboard
     func newViewController(ofType type: String) -> UIViewController
     {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(type)AD")
     }
     
+    // MARK: View Controller lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
                 
@@ -29,13 +36,16 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         
         dataSource = self
         delegate = self
-        
+        // load first view controller
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
                 
     }
     
+    // MARK: Layout PageViewController
+    
+    // make the background of dots from page view controller transparent
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         for view in self.view.subviews {
@@ -50,6 +60,9 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         }
     }
     
+    // MARK: PageViewController actions
+    
+    // load previous view
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
@@ -69,6 +82,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return orderedViewControllers[previousIndex]
     }
     
+    // load next view controller
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
     
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
@@ -90,10 +104,12 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return orderedViewControllers[nextIndex]
     }
     
+    // count of dots for page view controller
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return orderedViewControllers.count
     }
     
+    // highlight dot with index of the current view controller
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         guard let firstViewController = viewControllers?.first,
             let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
