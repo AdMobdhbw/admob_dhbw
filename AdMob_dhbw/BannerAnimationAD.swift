@@ -15,6 +15,7 @@ class BannerAnimationAD: UIViewController, GADBannerViewDelegate
     // MARK: Init
     
     var adAnimationBannerView: GADBannerView?
+    var timer: Timer!
     
     // MARK: View Controller lifecycle
     
@@ -29,6 +30,17 @@ class BannerAnimationAD: UIViewController, GADBannerViewDelegate
         adAnimationBannerView?.rootViewController = self
         
         adAnimationBannerView?.load(GADRequest())
+        
+        // set timer for color effects
+        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(BannerAnimationAD.setRandomBackgroundColor), userInfo: nil, repeats: true)
+    }
+    
+    // MARK: Layout Effects
+    
+    func setRandomBackgroundColor() {
+        UIView.animate(withDuration: 3.0){
+            self.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255))/255, green: CGFloat(arc4random_uniform(255))/255, blue: CGFloat(arc4random_uniform(255))/255, alpha: 1.0)
+        }
     }
     
     // AdMob actions
