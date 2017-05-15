@@ -38,9 +38,7 @@ class BannerAnimationAD: UIViewController, GADBannerViewDelegate
     // MARK: Layout Effects
     
     func setRandomBackgroundColor() {
-        UIView.animate(withDuration: 3.0){
             self.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255))/255, green: CGFloat(arc4random_uniform(255))/255, blue: CGFloat(arc4random_uniform(255))/255, alpha: 1.0)
-        }
     }
     
     // AdMob actions
