@@ -156,38 +156,43 @@ class URLItems {
     ]
     
     func getURL(_ selectedItemRow: String, _ selectedDetailItemRow: Int?) -> String? {
-        switch selectedItemRow {
-        case "Get Started":
-            return getStartedURL[selectedDetailItemRow!]
-        case "Analytics":
-            return analyticsURL[selectedDetailItemRow!]
-        case "Cloud Messaging":
-            return cloudMessagingURL[selectedDetailItemRow!]
-        case "Cloud Functions":
-            return cloudFunctionsURL[selectedDetailItemRow!]
-        case "Authetication":
-            return authenticationURL[selectedDetailItemRow!]
-        case "Realtime Database":
-            return realtimeDatabaseURL[selectedDetailItemRow!]
-        case "Storage":
-            return storageURL[selectedDetailItemRow!]
-        case "Hosting":
-            return hostingURL[selectedDetailItemRow!]
-        case "Crash Reporting":
-            return crashReportingURL[selectedDetailItemRow!]
-        case "Remote Config":
-            return remoteConfigURL[selectedDetailItemRow!]
-        case "App Indexing":
-            return appIndexingURL[selectedDetailItemRow!]
-        case "Dynamic Links":
-            return dynamicLinksURL[selectedDetailItemRow!]
-        case "Invites":
-            return invitesURL[selectedDetailItemRow!]
-        case "AdWords":
-            return adWordsURL[selectedDetailItemRow!]
-        case "AdMob":
-            return adMobURL[selectedDetailItemRow!]
-        default:
+        if selectedDetailItemRow != nil {
+            switch selectedItemRow {
+            case "Get Started":
+                return getStartedURL[selectedDetailItemRow!]
+            case "Analytics":
+                return analyticsURL[selectedDetailItemRow!]
+            case "Cloud Messaging":
+                return cloudMessagingURL[selectedDetailItemRow!]
+            case "Cloud Functions":
+                return cloudFunctionsURL[selectedDetailItemRow!]
+            case "Authetication":
+                return authenticationURL[selectedDetailItemRow!]
+            case "Realtime Database":
+                return realtimeDatabaseURL[selectedDetailItemRow!]
+            case "Storage":
+                return storageURL[selectedDetailItemRow!]
+            case "Hosting":
+                return hostingURL[selectedDetailItemRow!]
+            case "Crash Reporting":
+                return crashReportingURL[selectedDetailItemRow!]
+            case "Remote Config":
+                return remoteConfigURL[selectedDetailItemRow!]
+            case "App Indexing":
+                return appIndexingURL[selectedDetailItemRow!]
+            case "Dynamic Links":
+                return dynamicLinksURL[selectedDetailItemRow!]
+            case "Invites":
+                return invitesURL[selectedDetailItemRow!]
+            case "AdWords":
+                return adWordsURL[selectedDetailItemRow!]
+            case "AdMob":
+                return adMobURL[selectedDetailItemRow!]
+            default:
+                return "https://www.google.com/"
+            }
+
+        } else {
             return "https://www.google.com/"
         }
     }
