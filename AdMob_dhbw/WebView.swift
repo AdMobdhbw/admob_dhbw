@@ -19,16 +19,18 @@ class WebView: InterstitialAD, WKNavigationDelegate{
     
     // MARK: - ViewController Lifecycle
     
-    override func loadView() { // called, if view = nil
+    // called, if view = nil
+    override func loadView() {
         // create a web view
         webView = WKWebView()
         
         webView.navigationDelegate = self
         
-        // set it as *the* view of this view controller
+        // set it as view of this view controller
         view = webView
     }
     
+    // load the URL and display it in the web view
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         urlString = urlItems.getURL(selectedItem, selectedDetailItem)!
