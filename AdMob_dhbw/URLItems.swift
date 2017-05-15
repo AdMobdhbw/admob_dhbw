@@ -10,6 +10,9 @@ import UIKit
 
 class URLItems {
     
+    // MARK: - Variables
+    
+    // Store the URLs for all items of the DetailTableController
     var getStartedURL = [
         "https://firebase.google.com/docs/ios/setup"
     ]
@@ -154,6 +157,8 @@ class URLItems {
         "https://firebase.google.com/docs/admob/ios/rewarded-video",
         "https://firebase.google.com/docs/admob/ios/rewarded-video-adapters"
     ]
+    
+    // MARK: - WebView interface
     
     func getURL(_ selectedItemRow: String, _ selectedDetailItemRow: Int?) -> String? {
         if selectedDetailItemRow != nil {

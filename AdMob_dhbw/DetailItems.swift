@@ -10,8 +10,12 @@ import UIKit
 
 class DetailItems {
     
+    // MARK: - Variables
+    
+    // Store the cell states of the DetailTableController
     var detailCellState: [Bool]!
     
+    // Items for the DetailTableController
     var getStarted = [
         "iOS"
     ]
@@ -157,6 +161,9 @@ class DetailItems {
         "Rewarded Video Adapters"
     ]
     
+    // MARK: - DetailTableView Interface
+    
+    // Getter for the items for the DetailTableController
     func getDetailItem(_ selectedRow: String) -> [String]? {
         switch selectedRow {
         case "Get Started":
